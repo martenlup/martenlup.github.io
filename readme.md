@@ -15,5 +15,8 @@ That means structuring and designing an interesting website to showcase my skill
  - focused on images
  - bright colors
 
-📏 - I will use this website to learn `HTML/CSS and JavaScript.` This will also be improving my state of mind. Creating self worth and working towards a set goal. ```bash
+📏I will use this website to learn `HTML/CSS and JavaScript.` This will also be improving my state of mind. Creating self worth and working towards a set goal.
+
+```
 Deadline for this Project will be 1/10/2020
+

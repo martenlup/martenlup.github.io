@@ -10,7 +10,7 @@ That means structuring and designing an interesting website to showcase my skill
  - goodreads tab
  - blog/gedanken/philosophie tab
  
-## Design will be:
+## Design:
  - clean
  - focused on images
  - bright colors

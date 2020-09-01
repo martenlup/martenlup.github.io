@@ -1,5 +1,5 @@
 This website is mainly used to create an appealing story to get an Apprenticeship next year.
-That means structuring and designing an interesting website to showcase my skills and personality.
+That means structuring and designing an interesting website to showcase my skills and personality. <br>
 Content:
  - embedded videos to showcase my personality
  - projects tab

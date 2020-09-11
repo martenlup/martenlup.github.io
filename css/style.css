@@ -1,0 +1,176 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  margin: auto;
+}
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+h1{
+  font-size: 2.6rem;
+}
+ul {
+  font-size: 1.8rem;
+}
+h2 {
+  font-size: 3.3rem;
+}
+h3 {
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+a {
+  color:white;
+  text-decoration: none;
+}
+
+
+
+/* NAV */
+
+.main-head {
+  /* position: sticky;
+  top: 0%;
+  z-index: 4; */
+  background-color: #131c27;
+  color: white;
+  
+}
+.main-head nav {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+  min-height: 5vh;
+  align-items: center;
+
+}
+nav ul {
+  display: flex;
+  flex: 1 1 20rem;
+  list-style: none;
+  text-decoration: none;
+  justify-content: space-around;
+}
+nav li {
+  margin: 2rem;
+}
+#logo {
+  flex: 1 1 20rem;
+  list-style: none;
+  text-decoration: none;
+  font-family: Caveat;
+}
+iframe {
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.3), 0px 20px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Bewerbung1 */
+
+#bewerbung1 {
+  min-height: 50vh;
+  
+  color: white;
+  background: linear-gradient(rgba(255, 255, 255, 0.2), transparent),#9FB1C5;
+  background-repeat: no-repeat;
+  background-position: top;  
+}
+.bewerbung1-wrapper {
+  width:90%;
+  margin: auto;
+  min-height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.bewerbung1-video {
+  opacity: 0;
+  animation: FadeIn 1s forwards 0.3s;
+  flex: 1 1 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.bewerbung1-text {
+  
+  flex: 1 1 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  opacity: 0;
+  animation: FadeIn 1s forwards 0.6s;
+
+}
+.bewerbung1-text h2 {
+  text-align: center;
+  padding: 1rem;
+
+}
+.bewerbung1-text p {
+  margin: 1.5rem;
+}
+/* Bewerbung2 */
+
+#bewerbung2 {
+  min-height: 50vh;
+  
+  color: white;
+  background: linear-gradient(rgba(126, 117, 117, 0.2), transparent),#e6c96a;
+  background-repeat: no-repeat;
+  background-position: top;  
+}
+.bewerbung2-wrapper {
+  width:90%;
+  margin: auto;
+  min-height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.bewerbung2-text {
+  flex: 1 1 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  opacity: 0;
+  animation: FadeIn 1s forwards 0.9s;
+}
+.bewerbung2-video {
+  flex: 1 1 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  animation: FadeIn 1s forwards 1.2s;
+
+
+}
+
+.bewerbung2-text h2 {
+  text-align: center;
+  padding: 1rem;
+}
+.bewerbung2-text p {
+  margin: 1.5rem;
+}
+
+@keyframes FadeIn {
+  0% {opacity:0;}
+  100% {opacity:1}
+}
+@keyframes MoveIn {
+  0%{transform: translate(0 5%)}
+  100% {transform: translate(0%, 0%)}
+}

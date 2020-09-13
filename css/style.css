@@ -30,8 +30,19 @@ a {
   color:white;
   text-decoration: none;
 }
+p {
+  font-weight: 500;
 
+}
 
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.3), 0px 20px 20px rgba(0, 0, 0, 0.3);
+}
 
 /* NAV */
 
@@ -41,6 +52,7 @@ a {
   z-index: 4; */
   background-color: #131c27;
   color: white;
+ 
   
 }
 .main-head nav {
@@ -50,57 +62,107 @@ a {
   margin: auto;
   min-height: 5vh;
   align-items: center;
+  flex-wrap: wrap;
 
 }
 nav ul {
-  display: flex;
   flex: 1 1 20rem;
+  display: flex;
+  
   list-style: none;
   text-decoration: none;
   justify-content: space-around;
-}
-nav li {
   margin: 2rem;
+  text-decoration: underline;
 }
-#logo {
+nav a {
   flex: 1 1 20rem;
+}
+
+#logo {
   list-style: none;
   text-decoration: none;
   font-family: Caveat;
 }
-iframe {
-  box-shadow: 0px 10px 10px rgba(0,0,0,0.3), 0px 20px 20px rgba(0, 0, 0, 0.3);
+
+/* Über Mich */
+
+#uebermich {
+  min-height: 50vh;
+  background: linear-gradient(rgba(255, 255, 255, 0.2), transparent),#9FB1C5;
+  color: black;
+}
+.uebermich-wrapper {
+  width: 90%;
+  min-height:50vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;  
+  flex-wrap: wrap;
+}
+.uebermich-text {
+  flex: 1 1 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin:2rem;
+  min-width:40rem;
+}
+.uebermich-text p {
+  font-weight: 400;
+  text-align: left;
+}
+.uebermich-text h2 {
+  text-align: left;
+  padding: 2rem;
+}
+
+.uebermich-bild {
+  flex: 1 1 20rem;
+  margin:4rem;
+  min-height:25rem;
+  background: url("../img/marten_bremen_sw.jpg");
+  background-size: cover;
+  background-position: center;
+
+
+}
+h2 {
+  text-decoration: underline;
 }
 
 /* Bewerbung1 */
 
 #bewerbung1 {
   min-height: 50vh;
-  
-  color: white;
-  background: linear-gradient(rgba(255, 255, 255, 0.2), transparent),#9FB1C5;
-  background-repeat: no-repeat;
-  background-position: top;  
+  color: black;
+  background: linear-gradient(rgba(255, 255, 255, 0.2), transparent),#e6c96a;
 }
 .bewerbung1-wrapper {
   width:90%;
   margin: auto;
   min-height: 50vh;
   display: flex;
-  flex-wrap: wrap;
-  
+  flex-wrap: wrap;  
 }
-.bewerbung1-video {
-  opacity: 0;
-  animation: FadeIn 1s forwards 0.3s;
+ .bewerbung1-video {
   flex: 1 1 20rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  animation: FadeIn 1s forwards 0.3s; 
+  margin: 2rem;
+} 
+.bewerbung1-video-wrapper {
+  position: relative ;
+  width:70%; max-width: 70%; min-width: 30rem;
+  padding-bottom: 39.375%; /*720/1280 */
+  margin-top: 3rem;
 
 }
+
 .bewerbung1-text {
-  
   flex: 1 1 20rem;
   display: flex;
   flex-direction: column;
@@ -109,7 +171,8 @@ iframe {
   text-align: left;
   opacity: 0;
   animation: FadeIn 1s forwards 0.6s;
-
+  min-width: 40vh;
+  margin: 2rem;
 }
 .bewerbung1-text h2 {
   text-align: center;
@@ -125,7 +188,7 @@ iframe {
   min-height: 50vh;
   
   color: white;
-  background: linear-gradient(rgba(126, 117, 117, 0.2), transparent),#e6c96a;
+  background: linear-gradient(rgba(126, 117, 117, 0.2), transparent),#b66168;
   background-repeat: no-repeat;
   background-position: top;  
 }
@@ -135,7 +198,6 @@ iframe {
   min-height: 50vh;
   display: flex;
   flex-wrap: wrap;
-  
 }
 .bewerbung2-text {
   flex: 1 1 20rem;
@@ -146,6 +208,10 @@ iframe {
   text-align: left;
   opacity: 0;
   animation: FadeIn 1s forwards 0.9s;
+  min-width: 40vh;
+  margin: 2rem;
+
+  
 }
 .bewerbung2-video {
   flex: 1 1 20rem;
@@ -154,9 +220,15 @@ iframe {
   align-items: center;
   opacity: 0;
   animation: FadeIn 1s forwards 1.2s;
-
+  margin: 2rem;
+}
+.bewerbung2-video-wrapper {
+  position: relative ;
+  width:70%; max-width: 70%; min-width: 30rem;
+  padding-bottom: 39.375%; /*720/1280 */
 
 }
+
 
 .bewerbung2-text h2 {
   text-align: center;
@@ -173,4 +245,11 @@ iframe {
 @keyframes MoveIn {
   0%{transform: translate(0 5%)}
   100% {transform: translate(0%, 0%)}
+}
+
+/* MOBILE */
+
+@media screen and (max-width:740px) {
+  nav a {text-align: center;}
+  nav a {padding:2rem;}
 }

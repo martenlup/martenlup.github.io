@@ -3,6 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 html {
   font-size: 62.5%;
@@ -12,6 +14,7 @@ body {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
+  color: rgb(44, 44, 44)
 }
 h1{
   font-size: 2.6rem;
@@ -27,11 +30,11 @@ h3 {
   font-weight: normal;
 }
 a {
-  color:white;
   text-decoration: none;
+  color: rgb(44, 44, 44);
+  font-weight: 500;
 }
 p {
-  font-weight: 500;
 
 }
 
@@ -41,7 +44,7 @@ iframe {
   left: 0;
   width: 100%;
   height: 100%;
-  box-shadow: 0px 10px 10px rgba(0,0,0,0.3), 0px 20px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.13), 0px 20px 20px rgba(0, 0, 0, 0.13);
 }
 
 /* NAV */
@@ -50,8 +53,7 @@ iframe {
   /* position: sticky;
   top: 0%;
   z-index: 4; */
-  background-color: #131c27;
-  color: white;
+  background-color: #9eb4ff;
  
   
 }
@@ -71,11 +73,12 @@ iframe {
   list-style: none;
   text-decoration: none;
   justify-content: space-around;
-  margin: 3rem;
+  padding: 2rem;
   text-decoration: underline;
 }
 .main-head nav a {
   flex: 1 1 20rem;
+  margin: 1rem;
 }
 
 #logo {
@@ -88,11 +91,9 @@ iframe {
 
 #uebermich {
   min-height: 50vh;
-  background: linear-gradient(rgba(255, 255, 255, 0.2), transparent),#9FB1C5;
-  color: black;
+  background: linear-gradient(rgba(255, 255, 255, 0.1), transparent),#ffffff;
 }
 .uebermich-wrapper {
-  width: 90%;
   min-height:50vh;
   margin: auto;
   display: flex;
@@ -127,16 +128,12 @@ iframe {
 
 
 }
-h2 {
-  text-decoration: underline;
-}
 
 /* Bewerbung1 */
 
 #bewerbung1 {
   min-height: 50vh;
-  color: black;
-  background: linear-gradient(rgba(255, 255, 255, 0.2), transparent),#e6c96a;
+  background: linear-gradient(rgba(255, 255, 255, 0.2), transparent),#9eb4ff;
 }
 .bewerbung1-wrapper {
   width:90%;
@@ -158,7 +155,7 @@ h2 {
   position: relative ;
   width:70%; max-width: 70%; min-width: 30rem;
   padding-bottom: 39.375%; /*720/1280 */
-  margin-top: 3rem;
+  margin-bottom: 3rem;
 
 }
 
@@ -186,9 +183,7 @@ h2 {
 
 #bewerbung2 {
   min-height: 50vh;
-  
-  color: white;
-  background: linear-gradient(rgba(126, 117, 117, 0.2), transparent),#b66168;
+  background: linear-gradient(rgba(255, 255, 255, 0.1), transparent),#ffffff;
   background-repeat: no-repeat;
   background-position: top;  
 }
@@ -235,14 +230,16 @@ h2 {
 }
 /* FOOTER */
 footer {
-  background-color: #131c27;
-  min-height: 5vh;
+  background-color: #9eb4ff;
+
 }
 footer nav {
 
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  min-height: 8vh;
+  padding: 1.5rem;
 }
 footer nav ul {
   flex: 1 1 20rem;
@@ -273,4 +270,16 @@ footer nav {
   nav a {text-align: center;}
   nav a {padding:1rem;}
   nav a {justify-content: space-between;}
+
+  
+}
+
+
+@media screen and (min-width:741px) {
+  .bewerbung1-wrapper, nav, .bewerbung2-wrapper , .uebermich-wrapper {
+    max-width:70%;
+
+  }
+  
+
 }

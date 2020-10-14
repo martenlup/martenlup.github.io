@@ -15,34 +15,49 @@
 <body>
   <section class="projekte">
     <h2>
-      Meine Projekte
+      Raspberry Pi Webserver und Gameserver Projekt
     </h2>
-    <p>Der Raspberry Pi (Aussprache in Britischem Englisch: ˈrɑːzb(ə)rɪ ˈpaɪ) ist ein Einplatinencomputer, der von der
-      britischen Raspberry Pi Foundation entwickelt wurde. Der Rechner enthält ein Ein-Chip-System (SoC) von Broadcom
-      mit einer ARM-CPU. Die Platine hat das Format einer Kreditkarte. Der Raspberry Pi kam Anfang 2012 auf den Markt;
-      sein großer Markterfolg wird teils als Revival des bis dahin weitgehend bedeutungslos gewordenen Heimcomputers zum
-      Programmieren und Experimentieren angesehen.[1] Der im Vergleich zu üblichen Personal Computern sehr einfach
-      aufgebaute Rechner wurde von der Stiftung mit dem Ziel entwickelt, jungen Menschen den Erwerb von Programmier- und
-      Hardware-Kenntnissen zu erleichtern. Entsprechend niedrig wurde der Verkaufspreis angesetzt, der je nach Modell
-      etwa 5 bis 60 Euro beträgt. </br>
+    <p>Als ich vor einigen Jahren das erste mal vom Raspberry Pi in einem Youtube Video gehört habe, war ich echt
+      begeistert.
+      2019 kam dann der Raspberry Pi 4 raus, der in der 4GB Ram Variante echt Leistungsstark wurde, da musste ich
+      zuschlagen.
+      </br>
+      Als erstes Projekt wollte ich einen Minecraft Gameserver hosten. Die Vorteile des Pi's waren dabei offensichtlich:
+      Geringer Stromverbrauch, Kein Lüfter, klein und kompakt.
+      Doch hat der neue Pi genug Leistung für einen Vanilla Server? Die Kurze antwort: Ja hat er. </br>
+      Als erstes habe ich einen <a href="https://cuberite.org/">Cuberite</a> Server gehostet. Dieser Server Client ist
+      in C++
+      geschrieben und verbraucht daher deutlich weniger Ressourcen als
+      der Vanilla Java Client. Selbst mit 7 Spielern gab es so keine Probleme, wenn man nicht gerade in sämtliche
+      Richtungen gleichzeitig fliegt. Doch der Client war mir ein wenig zu Buggy.
+      </br>
+      Der Zweite Versuch war der <a href="https://papermc.io">PaperMC</a> Java Server client. Dieser ist zwar deutlich
+      ressourcenfressender als der Cuberite Server, jedoch deutlich sparsam er
+      als der Standard Minecraft Server Client. Damit hat es super geklappt. Es macht mit ca. 5 Leuten enorm laune zu
+      spielen. Allerdings sollte man nicht zu häufig neue Chunks laden, sonst
+      stürzt der Server relativ schnell ab. Trotzdem habe ich nun einen voll funktionsfähigen Minecraft Server
+      im Haus stehen, den ich gemütlich im Regal verstecken und per SSH und
+      Remotedesktop bedienen kann. <span class="span">Es hat sich also gelohnt. </span>
+      </br>
+      </br>
 
-      Bis Ende 2018 wurden mehr als 22 Millionen Geräte verkauft.[2] Die Entwicklung des Raspberry Pi wurde mit mehreren
-      Auszeichnungen bzw. Ehrungen bedacht. Es existiert ein großes Zubehör- und Softwareangebot für zahlreiche
-      Anwendungsbereiche. Verbreitet ist beispielsweise die Verwendung als Mediacenter, da der Rechner Videodaten mit
-      voller HD-Auflösung (1080p) dekodieren und über die HDMI-Schnittstelle ausgeben kann. Als Betriebssystem kommen
-      vor allem angepasste Linux-Distributionen mit grafischer Benutzeroberfläche zum Einsatz; für das neueste Modell
-      existiert auch Windows 10 in einer speziellen Internet-of-Things-Version ohne grafische Benutzeroberfläche. Das
-      Booten erfolgt gewöhnlich von einer wechselbaren SD-Karte. Bei der neueren Generation mit dem BCM2837 oder BCM2711
-      ist der Start auch von einem USB-Massenspeicher[3] oder Netzwerk[4] möglich. Eine native Schnittstelle für
-      Festplattenlaufwerke ist nicht vorhanden. </p>
+    </p>
     <ul>
       <h3>Dafür wird mein Raspberry Pi benutzt:</h3>
-      <li>Webserver (diese Webseite läuft gerade auf dem Server)
+      <li>Webserver mit Nginx
       </li>
-      <li>Minecraft Gameserver mit dem Paper.MC Java Server clienten</li>
+      <li>Minecraft Gameserver mit dem Paper.MC Java Server Client</li>
       <li>Cuberite.org Minecraft Gameserver, geschrieben in C++</li>
       <li>Linux Lernressource für Desktoplose Linux Betriebssysteme</li>
     </ul>
+
+    </br>
+    </br>
+    </br>
+
+    <div class="zurueck">
+      <a href="./index.html">Zurück zum Hauptinhalt</a>
+    </div>
   </section>
   <section class="bilder">
     <div class="bilder-wrapper">

@@ -230,7 +230,7 @@ footer nav {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  min-height: 8vh;
+  min-height: 6vh;
   padding: 1.5rem;
 }
 footer nav ul {

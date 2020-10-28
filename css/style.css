@@ -229,6 +229,7 @@ footer nav {
 
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   min-height: 6vh;
   padding: 1.5rem;

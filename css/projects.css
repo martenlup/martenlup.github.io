@@ -58,6 +58,20 @@ span {
 
 .zurueck {
   padding: 10rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: blanchedalmond;
+}
+
+@media screen and (max-width:1024px) {
+  body {
+    width: 95%;
+  }
+  h1, h2, h3 {
+    text-align: center;
+    padding: 2rem;
+  }
+  li {
+    text-align: center;
+    padding: 0.5rem;
+  }
 }

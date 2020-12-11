@@ -234,7 +234,7 @@ footer nav {
   min-height: 6vh;
   padding: 1.5rem;
 }
-footer nav ul {
+footer nav li {
   flex: 1 1 20rem;
   list-style: none;
 }
@@ -245,8 +245,13 @@ footer nav div {
 footer nav {
   width: 90%;
   margin: auto;
+ 
 }
 
+.twitter {
+  font-size:1.4rem;
+
+}
 .footer-p-klein {
   font-size: 1.2rem;
 }

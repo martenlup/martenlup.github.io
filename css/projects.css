@@ -9,10 +9,10 @@ html {
   margin: auto;
 }
 body {
-  font-family: sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
-  padding: 2rem;
+  padding: 0rem;
   background: #b6c7ff;
   width: 70%;
   margin: auto;
@@ -44,6 +44,47 @@ p {
   padding: 2rem;
 }
 
+/* NAV */
+
+.main-head {
+  /* position: sticky;
+  top: 0%;
+  z-index: 4; */
+  background-color: #9eb4ff;
+ 
+  
+}
+.main-head nav {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+  min-height: 5vh;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+.main-head nav ul {
+  flex: 1 1 20rem;
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  justify-content: space-around;
+  padding: 2rem;
+  text-decoration: underline;
+}
+.main-head nav a {
+  flex: 1 1 20rem;
+  margin: 1rem;
+}
+
+#logo {
+  list-style: none;
+  text-decoration: none;
+  font-family: Caveat;
+}
+
+
 .projekte {
 
   display: flex;
@@ -51,6 +92,10 @@ p {
   align-items: center;
 
 }
+.aufzaehlung-wrapper {
+  
+}
+.aufzaehlung {
 
 span {
   text-decoration: underline;
